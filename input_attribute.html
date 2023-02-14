@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attribute</title>
+</head>
+<body>
+    <h1>HTML Registration form</h1>
+    <br>
+    <form action="#">
+        <div>
+            <label for="username">Enter Your Name</label>
+            <input type="text" id="username" value="Suraj" readonly disabled size="25">
+            <br><br>
+            <label for="datemax">Enter a date before 1980-01-01</label>
+            <input type="date"
+            id="datemax"
+            name="datemax"
+            max="1979-12-31">
+            <br><br>
+            <label for="datemin">Enter a date after 2023-01-01</label>
+            <input type="date"
+            id="datemin"
+            name="datemom"
+            min="2023-01-02">
+            <br><br>
+            <label for="quantity">Quantity (between 1 and 5)</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <br><br>
+            <label for="files">Select Files</label>
+            <input type="file" id="files" name="files" multiple>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="ex@gmail.com" required>
+            <br><br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" autofocus autocomplete="off" required>
+            <br><br>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br><br>
+
+            <!-- dropdown  -->
+            <label for="cars">Choose a Car</label>
+            <select name="cars" id="cars">
+                <option value="Volvo">Volvo</option>
+                <option value="Fiat">Fiat</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+            </select>
+            <br><br>
+            <textarea name="textBox" id="textBox" cols="30" rows="10" placeholder="Reason.."></textarea>
+            <br><br>
+            <button onclick="alert('Hii')">Click</button>
+            <br><br>
+            <form action="#">
+                <fieldset>
+                    <legend>Portfolio:</legend>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Last Name" required><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <br><hr>
+            
+
+
+        </div>
+    </form>
+</body>
+</html>
